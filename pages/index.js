@@ -24,7 +24,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             <div className="w3-col l8 s12">
               {/* Blog entry */}
               <div className="w3-card-4 w3-margin w3-white">
-                <img src="img/paisagem.jpg" alt="Nature" style={{width: '100%'}} />
+                <img src="/paisagem.jpg" alt="Nature" style={{width: '100%'}} />
                 <div className="w3-container">
                   <h3><b>NOSSA PRIMEIRA VIAGEM</b></h3>
                   <h5>New York, <span className="w3-opacity">14 de maio, 2018</span></h5>
@@ -44,7 +44,7 @@ and is wrapped around the whole page content, except for the footer in this exam
               <hr />
               {/* Blog entry */}
               <div className="w3-card-4 w3-margin w3-white">
-                <img src="img/maldivas.jpg" alt="Norway" style={{width: '100%'}} />
+                <img src="/maldivas.jpg" alt="Norway" style={{width: '100%'}} />
                 <div className="w3-container">
                   <h3><b>VIAGEM INESQUECIVEL</b></h3>
                   <h5>Maldivas, <span className="w3-opacity">24 de dezembro, 2021</span></h5>
@@ -67,7 +67,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             <div className="w3-col l4">
               {/* About Card */}
               <div className="w3-card w3-margin w3-margin-top">
-                <img src="img/amigas.jpg" style={{width: '100%'}} />
+                <img src="/amigas.jpg" style={{width: '100%'}} />
                 <div className="w3-container w3-white">
                   <h4><b>Júlia e Maria Clara</b></h4>
                   <p>Duas amigas que amam viajar pelo mundo e estão loucas para compartilhar suas experiências 🌎</p>
@@ -80,22 +80,22 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </div>
                 <ul className="w3-ul w3-hoverable w3-white">
                   <li className="w3-padding-16">
-                    <img src="img/disney.jpg" alt="Image" className="w3-left w3-margin-right" style={{width: '50px'}} />
+                    <img src="/disney.jpg" alt="Image" className="w3-left w3-margin-right" style={{width: '50px'}} />
                     <span className="w3-large">Disney</span><br />
                     <span>28 de novembro, 2018</span>
                   </li>
                   <li className="w3-padding-16">
-                    <img src="img/canada.jpg" alt="Image" className="w3-left w3-margin-right" style={{width: '50px'}} />
+                    <img src="/canada.jpg" alt="Image" className="w3-left w3-margin-right" style={{width: '50px'}} />
                     <span className="w3-large">Canada</span><br />
                     <span>06 de abril, 2020</span>
                   </li> 
                   <li className="w3-padding-16">
-                    <img src="img/cancun.jpg" alt="Image" className="w3-left w3-margin-right" style={{width: '50px'}} />
+                    <img src="/cancun.jpg" alt="Image" className="w3-left w3-margin-right" style={{width: '50px'}} />
                     <span className="w3-large">Cancun</span><br />
                     <span>20 de setembro, 2021</span>
                   </li>   
                   <li className="w3-padding-16 w3-hide-medium w3-hide-small">
-                    <img src="img/los angeles.jpg" alt="Image" className="w3-left w3-margin-right" style={{width: '50px'}} />
+                    <img src="/los angeles.jpg" alt="Image" className="w3-left w3-margin-right" style={{width: '50px'}} />
                     <span className="w3-large">Los Angeles</span><br />
                     <span>02 de junho, 2019</span>
                   </li>  
