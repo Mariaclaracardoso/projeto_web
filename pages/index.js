@@ -4,79 +4,115 @@ import styles from '../styles/Home.module.css';
 
 export default function Home () {
 	return (
-      <div>
-        <title>W3.CSS Template</title>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
-        <style dangerouslySetInnerHTML={{__html: "\nbody,h1,h5 {font-family: \"Raleway\", sans-serif}\nbody, html {height: 100%}\n.bgimg {\n  background-image: url('/onepage_restaurant.jpg');\n  min-height: 100%;\n  background-position: center;\n  background-size: cover;\n}\n" }} />
-        <div className="bgimg w3-display-container w3-text-white">
-          <div className="w3-display-middle w3-jumbo">
-            <p>logo</p>
+      <div className="w3-content" style={{maxWidth: '1400px'}}>
+        {/* Header */}
+        <header className="w3-container w3-center w3-padding-32"> 
+          <h1><b>BEM VINDAS AO NOSSO BLOG</b></h1>
+          <p>Nós somos <span className="w3-tag">Júlia e Maria Clara</span></p>
+        </header>
+        {/* Grid */}
+        <div className="w3-row">
+          {/* Blog entries */}
+          <div className="w3-col l8 s12">
+            {/* Blog entry */}
+            <div className="w3-card-4 w3-margin w3-white">
+              <img src="img/paisagem.jpg" alt="Nature" style={{width: '100%'}} />
+              <div className="w3-container">
+                <h3><b>NOSSA PRIMEIRA VIAGEM</b></h3>
+                <h5>New York, <span className="w3-opacity">14 de maio, 2018</span></h5>
+              </div>
+              <div className="w3-container">
+                <p>Além de ser a cidade que nunca dorme, New York tem muitas experiências para desfrutar durante sua viagem. Vamos lhe falar sobre os melhores para que você tenha uma memória inesquecível de sua estadia.</p>
+                <div className="w3-row">
+                  <div className="w3-col m8 s12">
+                    <p><button className="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+                  </div>
+                  <div className="w3-col m4 w3-hide-small">
+                    <p><span className="w3-padding-large w3-right"><b>Comments</b> <span className="w3-tag">10000</span></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            {/* Blog entry */}
+            <div className="w3-card-4 w3-margin w3-white">
+              <img src="img/maldivas.jpg" alt="Norway" style={{width: '100%'}} />
+              <div className="w3-container">
+                <h3><b>VIAGEM INESQUECIVEL</b></h3>
+                <h5>Maldivas, <span className="w3-opacity">24 de dezembro, 2021</span></h5>
+              </div>
+              <div className="w3-container">
+                <p>No post de hoje do blog, apresento a vocês um dos destinos mais bonitos e cobiçados do mundo – as Ilhas Maldivas. Tínhamos planos de conhecer esse lugar de águas calmas e cristalinas há muitos anos e desta vez, dentro de uma viagem maior, encaixamos a tão esperada visita.😍</p>
+                <div className="w3-row">
+                  <div className="w3-col m8 s12">
+                    <p><button className="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+                  </div>
+                  <div className="w3-col m4 w3-hide-small">
+                    <p><span className="w3-padding-large w3-right"><b>Comments</b> <span className="w3-badge">50000</span></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* END BLOG ENTRIES */}
           </div>
-          <div className="w3-display-topleft w3-container w3-xlarge">
-            <p><button onclick="document.getElementById('menu').style.display='block'" className="w3-button w3-black">menu</button></p>
-            <p><button onclick="document.getElementById('contact').style.display='block'" className="w3-button w3-black">contact</button></p>
+          {/* Introduction menu */}
+          <div className="w3-col l4">
+            {/* About Card */}
+            <div className="w3-card w3-margin w3-margin-top">
+              <img src="img/amigas.jpg" style={{width: '100%'}} />
+              <div className="w3-container w3-white">
+                <h4><b>Júlia e Maria Clara</b></h4>
+                <p>Duas amigas que amam viajar pelo mundo e estão loucas para compartilhar suas experiências 🌎</p>
+              </div>
+            </div><hr />
+            {/* Posts */}
+            <div className="w3-card w3-margin">
+              <div className="w3-container w3-padding">
+                <h4>Popular Posts</h4>
+              </div>
+              <ul className="w3-ul w3-hoverable w3-white">
+                <li className="w3-padding-16">
+                  <img src="img/disney.jpg" alt="Image" className="w3-left w3-margin-right" style={{width: '50px'}} />
+                  <span className="w3-large">Disney</span><br />
+                  <span>28 de novembro, 2018</span>
+                </li>
+                <li className="w3-padding-16">
+                  <img src="img/canada.jpg" alt="Image" className="w3-left w3-margin-right" style={{width: '50px'}} />
+                  <span className="w3-large">Canada</span><br />
+                  <span>06 de abril, 2020</span>
+                </li> 
+                <li className="w3-padding-16">
+                  <img src="img/cancun.jpg" alt="Image" className="w3-left w3-margin-right" style={{width: '50px'}} />
+                  <span className="w3-large">Cancun</span><br />
+                  <span>20 de setembro, 2021</span>
+                </li>   
+                <li className="w3-padding-16 w3-hide-medium w3-hide-small">
+                  <img src="img/los angeles.jpg" alt="Image" className="w3-left w3-margin-right" style={{width: '50px'}} />
+                  <span className="w3-large">Los Angeles</span><br />
+                  <span>02 de junho, 2019</span>
+                </li>  
+              </ul>
+            </div>
+            <hr /> 
+            {/* Labels / tags */}
+            <div className="w3-card w3-margin">
+              <div className="w3-container w3-padding">
+                <h4>Tags</h4>
+              </div>
+              <div className="w3-container w3-white">
+                <p><span className="w3-tag w3-black w3-margin-bottom">Travel</span> <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+                  <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+                  <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+                  <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+                  <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+                </p>
+              </div>
+            </div>
+            {/* END Introduction Menu */}
           </div>
-          <div className="w3-display-bottomleft w3-container">
-            <p className="w3-xlarge">monday - friday 10-23 | saturday 14-02</p>
-            <p className="w3-large">42 village St, New York</p>
-            <p>powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-          </div>
-        </div>
-        {/* Menu Modal */}
-        <div id="menu" className="w3-modal">
-          <div className="w3-modal-content w3-animate-zoom">
-            <div className="w3-container w3-black w3-display-container">
-              <span onclick="document.getElementById('menu').style.display='none'" className="w3-button w3-display-topright w3-large">x</span>
-              <h1>Starters</h1>
-            </div>
-            <div className="w3-container">
-              <h5>Tomato Soup <b>$2.50</b></h5>
-              <h5>Chicken Salad <b>$3.50</b></h5>
-              <h5>Bread and Butter <b>$1.00</b></h5>
-            </div>
-            <div className="w3-container w3-black">
-              <h1>Main Courses</h1>
-            </div>
-            <div className="w3-container">
-              <h5>Grilled Fish and Potatoes <b>$8.50</b></h5>
-              <h5>Italian Pizza <b>$5.50</b></h5>
-              <h5>Veggie Pasta <b>$4.00</b></h5>
-              <h5>Chicken and Potatoes <b>$6.50</b></h5>
-              <h5>Deluxe Burger <b>$5.00</b></h5>
-            </div>
-            <div className="w3-container w3-black">
-              <h1>Desserts</h1>
-            </div>
-            <div className="w3-container">
-              <h5>Fruit Salad <b>$2.50</b></h5>
-              <h5>Ice cream <b>$2.00</b></h5>
-              <h5>Chocolate Cake <b>$4.00</b></h5>
-              <h5>Cheese <b>$5.50</b></h5>
-            </div>
-          </div>
-        </div>
-        {/* Contact Modal */}
-        <div id="contact" className="w3-modal">
-          <div className="w3-modal-content w3-animate-zoom">
-            <div className="w3-container w3-black">
-              <span onclick="document.getElementById('contact').style.display='none'" className="w3-button w3-display-topright w3-large">x</span>
-              <h1>Contact</h1>
-            </div>
-            <div className="w3-container">
-              <p>Reserve a table, ask for today's special or just send us a message:</p>
-              <form action="/action_page.php" target="_blank">
-                <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name" /></p>
-                <p><input className="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People" /></p>
-                <p><input className="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" defaultValue="2020-11-16T20:00" /></p>
-                <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message" /></p>
-                <p><button className="w3-button" type="submit">SEND MESSAGE</button></p>
-              </form>
-            </div>
-          </div>
-        </div>
+          {/* END GRID */}
+        </div><br />
+        {/* END w3-content */}
       </div>
     );
   }
